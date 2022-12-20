@@ -12,8 +12,8 @@ import org.springframework.context.ApplicationContext;
 public class Ejercicios456Application {
 
 	public static void main(String[] args) {
-		ApplicationContext context =SpringApplication.run(Ejercicios456Application.class, args);
-		LaptopRepository repository= context.getBean(LaptopRepository.class);
+		 ApplicationContext context =SpringApplication.run(Ejercicios456Application.class, args);
+		 LaptopRepository repository= context.getBean(LaptopRepository.class);
 
 
 

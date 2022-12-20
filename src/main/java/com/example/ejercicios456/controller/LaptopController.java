@@ -2,8 +2,8 @@ package com.example.ejercicios456.controller;
 
 import com.example.ejercicios456.entities.Laptop;
 import com.example.ejercicios456.repository.LaptopRepository;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpHeaders;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -16,10 +16,13 @@ public class LaptopController {
 
     //constructor
 
-
     public LaptopController(LaptopRepository laptopRepository) {
         this.laptopRepository = laptopRepository;
     }
+
+    // CRUD sobre la entidad Laptop
+
+    // Buscar todos los laptops (lista de laptops)
 
     @GetMapping("api/laptop")
     public List<Laptop> findAll(){
@@ -27,5 +30,12 @@ public class LaptopController {
 
 
 
+    }
+// crear un nuevo laptop en base de datos
+@PostMapping("api/laptop")
+    public Laptop create(@RequestBody Laptop laptop){
+
+        // guardar el laptop recibido por parámetro en la base de datos
+        return laptopRepository.save(laptop);
     }
 }
