@@ -17,8 +17,8 @@ El acceso se puede realizar desde Postman o Navegador.
 2. LaptopRepository
 3. LaptopController
    1. Buscar todos los laptops 
-   2. buscar un solo libro 
-   3. Crear un nuevo libro 
-   4. Actualizar un libro existente 
-   5. Borrar un libro
-   6. Borrar todos los libros
+   2. buscar un solo laptop 
+   3. Crear un nuevo laptop 
+   4. Actualizar un laptop existente 
+   5. Borrar un laptop
+   6. Borrar todos los laptops
