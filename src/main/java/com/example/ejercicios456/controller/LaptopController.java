@@ -79,7 +79,7 @@ public class LaptopController {
             return ResponseEntity.badRequest().build();
         }
         if (!laptopRepository.existsById(laptop.getId())) {
-            log.warn("Trying to update a non existent book");
+            log.warn("Trying to update a non existent laptop");
             return ResponseEntity.notFound().build();
         }
 
